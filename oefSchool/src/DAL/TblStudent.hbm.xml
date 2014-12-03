@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 3, 2014 2:40:05 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="schooldb" name="DAL.TblStudent" optimistic-lock="version" table="tbl_student">
+    <id name="studentId" type="java.lang.Integer">
+      <column name="studentID"/>
+      <generator class="identity"/>
+    </id>
+    <property name="naam" type="string">
+      <column length="50" name="naam" not-null="true"/>
+    </property>
+    <property name="voornaam" type="string">
+      <column length="50" name="voornaam" not-null="true"/>
+    </property>
+    <property name="email" type="string">
+      <column length="50" name="email" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
